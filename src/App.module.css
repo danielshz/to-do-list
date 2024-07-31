@@ -1,0 +1,140 @@
+.wrapper {
+  background-color: var(--gray-700);
+  height: 12.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.75rem;
+}
+
+.content {
+  max-width: 46rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 4rem;
+
+  margin: -1.5rem auto 6rem;
+}
+
+.addTaskBar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.addTaskBar:first-child {
+  flex: 1;
+}
+
+.createButton {
+  background-color: var(--blue-500);
+  border: 0;
+  outline: 0;
+  padding: 1rem;
+  border-radius: 10px;
+
+  width: 6rem;
+  height: 3.5rem;
+
+  color: var(--gray-100);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.createButton:focus, .createButton:hover {
+  opacity: 0.8;
+}
+
+.createButton svg {
+  font-size: 2rem;
+}
+
+.tasksInfos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 0.875rem;
+}
+
+.tasksInfos div {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+.tasksInfos span {
+  font-weight: 500;
+  background-color: var(--gray-400);
+  padding: 0 10px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+
+.tasksInfos div:first-child p {
+  color: var(--blue-300);
+} 
+
+.tasksInfos div:last-child p {
+  color: var(--purple-300);
+}
+
+.emptyList {
+  margin-top: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  border-top: 1px solid var(--gray-400);
+  border-radius: 10px;
+  color: var(--gray-300);
+}
+
+.emptyList svg {
+  font-size: 3.6rem;
+  margin-top: 4rem;
+  color: var(--gray-400);
+}
+
+.emptyList div {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.emptyList div p:first-child {
+  font-weight: 700;
+}
+
+.list {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  html {
+      font-size: 87.5%;
+  }
+
+  .content {
+    margin: -1.5rem 2rem 12rem;
+  }
+}
